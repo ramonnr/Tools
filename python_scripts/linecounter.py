@@ -1,13 +1,13 @@
-'''
-Accumulates and prints number of lines of supplied filetypes in directory
-author: ramonnr@kth.se
-Free to use, redistribute and modify
-'''
 #!/usr/bin/env python3
 import subprocess
 import argparse
 import os
 import sys
+'''
+Accumulates and prints number of lines of supplied filetypes in directory
+author: ramonnr@kth.se
+Free to use, redistribute and modify
+'''
 
 parser = argparse.ArgumentParser(description = 'Returns total number of lines for all given filetypes in directory')
 parser.add_argument('--dir', type=str, default = '.', dest = 'directory',
